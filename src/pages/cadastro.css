@@ -1,0 +1,126 @@
+header {
+  max-width: 370px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 56px;
+  align-items: baseline;
+}
+header img {
+  max-width: 122px;
+  height: 17px;
+}
+.voltar {
+  text-align: center;
+  padding: 0px 17px;
+  color: white;
+  max-width: 68px;
+  height: 24px;
+  background: #212529;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #212529;
+}
+.voltar:active {
+  background-color: #868e96;
+}
+.cadastro {
+  max-width: 370px;
+  max-height: 711px;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 20px 22px;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  background: #212529;
+  box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.cadastro p {
+  text-align: start;
+}
+.cadastro h1 {
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #f8f9fa;
+}
+.cadastro h3 {
+  text-align: center;
+  color: #868e96;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+input {
+  background: #343b41;
+  max-width: 329px;
+  min-width: 263.79px;
+  max-height: 48px;
+  min-height: 38px;
+  border: 1.2182px solid #343b41;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+select {
+  color: #868e96;
+  background: #343b41;
+  max-width: 329px;
+  min-width: 263.79px;
+  max-height: 48px;
+  min-height: 38px;
+  border: 1.2182px solid #343b41;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+input:hover {
+  color: white;
+}
+.botaocadastro {
+  margin-top: 30px;
+  min-height: 38px;
+  background-color: #59323f;
+  border: 1px solid #59323f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.botaocadastro:active {
+  background-color: #868e96;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+h4 {
+  text-align: center;
+  color: #868e96;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+@media (max-width: 350px) {
+  header {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .cadastro {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-right: 5px;
+  }
+  
+}
