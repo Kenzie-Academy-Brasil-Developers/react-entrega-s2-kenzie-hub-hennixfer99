@@ -58,6 +58,15 @@ header img {
 }
 .cadastro h3 {
   text-align: center;
+  color: #99303f;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+}
+.cadastro h4{
+  text-align: center;
   color: #868e96;
   font-family: "Inter";
   font-style: normal;
@@ -98,7 +107,7 @@ input:hover {
   cursor: pointer;
 }
 .botaocadastro:active {
-  background-color: #868e96;
+  background-color: #343b41;
 }
 ::-webkit-scrollbar {
   width: 0px;

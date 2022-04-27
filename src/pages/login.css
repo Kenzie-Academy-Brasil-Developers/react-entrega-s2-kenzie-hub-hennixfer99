@@ -1,0 +1,66 @@
+.login {
+  max-width: 369px;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  padding: 42px 22px;
+  background: #212529;
+  box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 40px;
+}
+.login h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+.login p{
+    text-align: start;
+}
+.botaoentrar {
+  color: white;
+  height: 48px;
+  background: #ff577f;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.login h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #868e96;
+}
+.botaocadastrar {
+  height: 48px;
+  background-color: #868e96;
+  color: white;
+  border: 1.2182px solid #868e96;
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+img {
+  width: 144px;
+  height: 20px;
+}
+.quadradinho {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  color: #F8F9FA;
+  align-items: center;
+}
+
+input:hover {
+    color: white;
+}
+.botaoentrar:active {
+    background-color: #59323f;
+  }
+  .botaocadastrar:active {
+    background-color: #868e96;
+}
