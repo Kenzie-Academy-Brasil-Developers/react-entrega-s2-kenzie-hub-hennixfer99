@@ -62,12 +62,12 @@ function Cadastro() {
   };
   return (
     <>
-      <header>
+      <navbar>
         <img src={Kenziehub} />
         <button className="voltar" onClick={voltar}>
           voltar
         </button>
-      </header>
+      </navbar>
       <main>
         <form
           className="cadastro"
@@ -97,10 +97,10 @@ function Cadastro() {
           <h3>{errors.confirmpassword?.message}</h3>
           <p>Selecionar módulo:</p>
           <select {...register("course_module")}>
-            <option value={"Primeiro Módulo"}>Primeiro Módulo</option>
-            <option value={"Segundo Módulo"}>Segundo Módulo</option>
-            <option value={"Terceiro Módulo"}>Terceiro Módulo</option>
-            <option value={"Quarto Módulo"}>Quarto Módulo</option>
+            <option value={"Primeiro Módulo (Introdução ao front-ent)"}>Primeiro Módulo</option>
+            <option value={"Segundo Módulo (Intermediáro em front-ent)"}>Segundo Módulo</option>
+            <option value={"Terceiro Módulo (Avançado em front-end)"}>Terceiro Módulo</option>
+            <option value={"Quarto Módulo (Introdução ao back-end)"}>Quarto Módulo</option>
           </select>
           <button className="botaocadastro" type="submit">
             Cadastrar

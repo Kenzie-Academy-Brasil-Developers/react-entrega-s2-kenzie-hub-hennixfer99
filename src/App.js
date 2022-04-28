@@ -5,6 +5,7 @@ import { Switch, Route } from "react-router-dom";
 import Login from "./pages/login";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import Homepage from "./pages/homepage";
 
 function App() {
   return (
@@ -25,10 +26,12 @@ function App() {
         <Route exatch path="/cadastre-se">
           <Cadastro />
         </Route>
-        <Route exatch path="/login">
+        <Route exatch path="/homepage" >
+          <Homepage />
+        </Route>
+        <Route exatch path="/">
           <Login />
         </Route>
-        <Route></Route>
       </Switch>
     </div>
   );

@@ -1,4 +1,4 @@
-header {
+navbar {
   max-width: 370px;
   display: flex;
   justify-content: space-between;
@@ -8,7 +8,7 @@ header {
   margin-top: 56px;
   align-items: baseline;
 }
-header img {
+navbar img {
   max-width: 122px;
   height: 17px;
 }
@@ -95,7 +95,7 @@ select {
   box-sizing: border-box;
   border-radius: 4px;
 }
-input:hover {
+input:focus {
   color: white;
 }
 .botaocadastro {

@@ -41,13 +41,12 @@ function Login(dados) {
     const user = {};
     user.email = cadastrado.email;
     user.password = cadastrado.password;
-    console.log(user)
     Api.post("sessions", user).then((response) => {
-      console.log(response)
       toast.success("logado com sucesso =D.")
+      console.log(response)
       window.localStorage.setItem( "idzinho",JSON.stringify(response.data.token))
-      window.localStorage.setItem( "usuario",JSON.stringify(response.data.users))
-      return remediacao.push(`/homepage`).reload();
+      window.localStorage.setItem( "usuario",JSON.stringify(response.data.user))
+      return remediacao.push(`/homepage`)
     }).catch((teste) => {
       toast.error("Alguma coisa deu errado =(, verifique seus dados.")
       
@@ -56,7 +55,9 @@ function Login(dados) {
   return (
     <main>
       <div className="quadradinho">
+        <navbar>
         <img src={Kenziehub} />
+        </navbar>
         <form className="login" onSubmit={handleSubmit(handleSubmitFunction)}>
           <h1>Login</h1>
           <p>E-mail:</p>
