@@ -43,9 +43,8 @@ function Login(dados) {
     user.password = cadastrado.password;
     Api.post("sessions", user).then((response) => {
       toast.success("logado com sucesso =D.")
-      console.log(response)
-      window.localStorage.setItem( "idzinho",JSON.stringify(response.data.token))
-      window.localStorage.setItem( "usuario",JSON.stringify(response.data.user))
+      window.localStorage.setItem( "token",JSON.stringify(response.data.token))
+      window.localStorage.setItem( "id",JSON.stringify(response.data.user.id))
       return remediacao.push(`/homepage`)
     }).catch((teste) => {
       toast.error("Alguma coisa deu errado =(, verifique seus dados.")
@@ -56,7 +55,9 @@ function Login(dados) {
     <main>
       <div className="quadradinho">
         <navbar>
+          <div>
         <img src={Kenziehub} />
+        </div>
         </navbar>
         <form className="login" onSubmit={handleSubmit(handleSubmitFunction)}>
           <h1>Login</h1>

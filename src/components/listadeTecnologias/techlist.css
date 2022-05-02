@@ -1,0 +1,39 @@
+li {
+  max-width: 100%;
+  width: 100%;
+  max-height: 48px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: #121214;
+  border-radius: 4.06066px;
+  text-align: center;
+  padding: 0 16px;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+li:hover {
+  background-color: #343b41;
+}
+li h3:hover{
+    color: white;
+}
+li h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.2123px;
+  line-height: 24px;
+  color: white;
+  margin-left: 12px;
+}
+li h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12.182px;
+  line-height: 22px;
+  margin-right: 12px;
+  color: #868e96;
+}

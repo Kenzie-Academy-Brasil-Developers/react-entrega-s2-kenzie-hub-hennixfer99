@@ -52,22 +52,25 @@ function Cadastro() {
     user.contact = `https://www.linkedin.com/in/${cadastrado.name}/`;
     
     Api.post("users", user).then((response) => {
-      console.log(response)
+      
       toast.success("Cadastrado com sucesso =D.")
       return logado.push(`/Login`).reload();
     }).catch((teste) => {
+      
       toast.error("Alguma coisa deu errado =(, verifique seus dados.")
       
     })
   };
   return (
     <>
-      <navbar>
+      <header>
+        <div className="cabecalho">
         <img src={Kenziehub} />
         <button className="voltar" onClick={voltar}>
           voltar
         </button>
-      </navbar>
+        </div>
+      </header>
       <main>
         <form
           className="cadastro"

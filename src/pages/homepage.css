@@ -2,7 +2,7 @@
   font-family: "Inter";
   font-style: normal;
 }
-navbar {
+.bloco1 {
   max-width: 100%;
   min-width: 300px;
   width: 100%;
@@ -11,13 +11,14 @@ navbar {
   margin-top: 2%;
   border-bottom: 2px solid #212529;
 }
-.navbar {
+.itens-topo1 {
   max-width: 1052px;
   width: 100%;
   min-width: 300px;
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
+  margin: 2% auto;
+  padding: 0 10px;
 }
 
 header {
@@ -26,19 +27,22 @@ header {
   border-bottom: 2px solid #212529;
   justify-content: space-between;
   text-align: center;
+  padding-bottom: 120px;
 }
-.header {
+.itens-topo2 {
   max-width: 1052px;
   width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 300px;
   display: flex;
-  margin: auto;
-  padding-top: 3%;
   justify-content: space-between;
   text-align: center;
   align-items: baseline;
+  padding: 0 10px;
 }
-.header h2 {
+header h2 {
   max-width: 151px;
   width: 100%;
   height: 28px;
@@ -47,7 +51,7 @@ header {
   line-height: 28px;
   color: #f8f9fa;
 }
-.header h3 {
+header h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -68,8 +72,9 @@ main {
   width: 100%;
   min-width: 300px;
   display: flex;
-  margin: 0 auto;
+  margin: 5% auto;
   flex-direction: column;
+  padding: 0 10px;
 }
 
 .tecnologias {
@@ -77,6 +82,7 @@ main {
   justify-content: space-between;
   align-items: baseline;
   color: white;
+  padding: 0 10px;
 }
 .add {
   background-color: #212529;
@@ -84,17 +90,35 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 8px;
-
 }
 .add img {
   width: 100%;
 }
+ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 1052px;
+  width: 100%;
+  max-height: 416.37px;
+  height: 100%;
+  align-items: center;
+  padding: 22px 19px;
+
+  background: #212529;
+  border-radius: 4px;
+  overflow-y: auto;
+}
 @media (max-width: 500px) {
-  .navbar {
-    margin: 0 10px;
+  .itens-topo1 {
+    padding: 0 10px;
+    margin: 5% auto;
   }
-  .header {
+  .itens-topo2 {
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
+  }
+  .tecnologias {
+    padding: 0 10px;
   }
 }
