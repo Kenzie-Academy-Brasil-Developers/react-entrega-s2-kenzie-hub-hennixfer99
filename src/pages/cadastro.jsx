@@ -62,15 +62,13 @@ function Cadastro() {
     })
   };
   return (
-    <>
-      <header>
+    <>     
         <div className="cabecalho">
         <img src={Kenziehub} />
         <button className="voltar" onClick={voltar}>
           voltar
         </button>
         </div>
-      </header>
       <main>
         <form
           className="cadastro"
